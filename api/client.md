@@ -49,6 +49,9 @@ messageService.on('created', message => console.log('Created a message', message
 messageService.create({
   text: 'Message from client'
 });
+
+// Loop though all services:
+client.service.map(service => { console.log('Do something with the service', service); });
 ```
 
 ## React Native
